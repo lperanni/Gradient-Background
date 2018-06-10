@@ -8,7 +8,7 @@ let randButton = document.querySelector(".button1");
 
 
 //Show CSS text for color on start up
-css.onload() = function() {
+css.onload = function() {
 	css.textContent = 
 	"linear-gradient(to right, " 
 	+ color1.value 
@@ -54,6 +54,6 @@ function setRandomBackground(){
 
 
 //Gets user input for Color choice
-color1.addEventListener("input", updateBackground());
-color2.addEventListener("input", updateBackground());
-randButton.addEventListener("click", setRandomBackground());
+color1.addEventListener("input", updateBackground);
+color2.addEventListener("input", updateBackground);
+randButton.addEventListener("click", setRandomBackground);
